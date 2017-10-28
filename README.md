@@ -24,11 +24,13 @@ Por ahora la traducción al Español no esta incluida en el código del proyecto
 
 1. Descargar paquetes compilados que incluyen la traducción al Español desde [esta dirección](http://tenoli.gobiernoelectronico.gob.sv/debs/) 
 
+La instalación de los paquetes DEB está [documentada en este enlace](https://github.com/egobsv/Tenoli-LAT/blob/master/Instalar-DEBS.md).
+
 2. Compilar los paquetes incluyendo la traducción al Español. Antes de iniciar asegúrese de descargar a su maquina todos los archivos de este repositorio. En adelante se asume que esa copia existe en la carpeta 'copiaRepo'. A continuación se detallan cada uno de los pasos
 
-2.1. Descargar el código fuente de X-Road dentro de la carpeta 'xroad-code'. La traducción corresponde a la versión 6.16 [disponible en este enlace](https://github.com/ria-ee/X-Road/releases)
+* Descargar el código fuente de X-Road dentro de la carpeta 'xroad-code'. La traducción corresponde a la versión 6.16 [disponible en este enlace](https://github.com/ria-ee/X-Road/releases)
 
-2.2. Descargar el archivo ESfiles-6.16.zip expandirlo, luego copiar los archivos de traducción al código fuente
+* Descargar el archivo ESfiles-6.16.zip expandirlo, luego copiar los archivos de traducción al código fuente
 
 ```
 cp copiaRepo/ESfiles-6.16/center-ui/* xroad-code/src/center-ui/config/locales/;
@@ -36,7 +38,7 @@ cp copiaRepo/ESfiles-6.16/common-ui/* xroad-code/src/common-ui/config/locales/;
 cp copiaRepo/ESfiles-6.16/proxy-ui/* xroad-code/src/proxy-ui/config/locales/;
 cd xroad-code/src;
 ```
-2.3. Cambiar el idioma de la plataforma modificando la variable config.i18n.default_locale (':en' por ':es') dentro de los archivos: 
+* Cambiar el idioma de la plataforma modificando la variable config.i18n.default_locale (':en' por ':es') dentro de los archivos: 
 
 ```
 xroad-code/src/center-service/config/application.rb 
@@ -44,16 +46,16 @@ xroad-code/src/center-ui/config/application.rb
 xroad-code/src/proxy-ui/config/application.rb
 ```
 
-2.4. Compilar el código fuente siguiendo las instrucciones del proyecto X-Road [disponible en este enlace](https://github.com/ria-ee/X-Road/blob/44d69e017541fe25f7cdfcd541a5d74d66ff5566/src/BUILD.md)
+* Compilar el código fuente siguiendo las instrucciones del proyecto X-Road [disponible en este enlace](https://github.com/ria-ee/X-Road/blob/44d69e017541fe25f7cdfcd541a5d74d66ff5566/src/BUILD.md)
 
-2.5. Una vez terminada la compilación los paquetes de instalación en las siguientes rutas: 
+* Una vez terminada la compilación los paquetes de instalación en las siguientes rutas: 
 
 ```
 Paquetes .DEB en xroad-code/src/packets/ 
 Paquetes  .RPM en xroad-code/src/packets/xroad/redhat/RMPS/
 ```
 
-## Instalación usando Paquetes DEB
+La instalación de los paquetes DEB está [documentada en este enlace](https://github.com/egobsv/Tenoli-LAT/blob/master/Instalar-DEBS.md).
 
 
 
