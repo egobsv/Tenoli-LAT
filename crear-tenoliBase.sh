@@ -33,3 +33,4 @@
    echo "10.0.0.12 ss2.tenoli.gob.sv" >> /etc/hosts;
    echo "10.0.0.13 ac.tenoli.gob.sv" >> /etc/hosts;
    echo "10.0.0.13 ocsp.tenoli.gob.sv" >> /etc/hosts;
+   echo "10.0.0.13 tsa.tenoli.gob.sv" >> /etc/hosts;
