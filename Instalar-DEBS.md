@@ -64,7 +64,7 @@ cp  copiaRepo/ss-respuestas.txt tenoli/
 
 * Editar las variables de la plataforma, los parámetros del: servidor central dentro de  sc-respuestas.txt, del servidor de seguridad dentro de ss-respuestas.txt, de la autoridad certificadora dentro de init.sh.
 
-``
+```
 cd tenoli
 nano sc-respuestas.txt
 nano ss-respuestas.txt
