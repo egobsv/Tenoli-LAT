@@ -3,7 +3,7 @@
 
 A continuación se detallan los pasos para instalar los paquetes DEB de la plataforma en un ambiente de prueba con todos sus componentes usando Vagrant. Para acelerar el proceso primero crearemos una máquina virtual base con todas las librerías necesarias. En adelante se asume que una copia de este repositorio esta disponible en la carpeta 'copiaRepo'
 
-*Nota: La plataforma solo esta disponible para Ubuntu Trusty.
+* Nota: La plataforma solo esta disponible para Ubuntu Trusty.
 
 
 1. Crear Maquina Virtual base 
