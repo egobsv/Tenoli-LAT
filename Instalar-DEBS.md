@@ -55,7 +55,7 @@ vagrant box add tenoliBase tenoliBase.box
 * Crear carpeta del proyecto, copiar archivos. 
 
 ```
-mkdir tenoli
+mkdir -p tenoli/certificados
 cp copiaRepo/Vagrantfile tenoli/
 cp -r copiaRepo/openssl-ca tenoli/
 cp  copiaRepo/sc-respuestas.txt tenoli/
@@ -77,3 +77,23 @@ nano openssl-ca/home/ca/CA/init.sh
 vagrant up
 
 ```
+
+* Obtener certificados de autoridad certificadora, copiarlos a carpeta del proyecto.
+
+```
+vagrant ssh ca
+cp /home/ca/CA/certs/*pem /vagrant/certificados
+exit
+vagrant rsync-back
+```
+
+Los certificados estarán ahora disponibles en la carpeta tenoli/certifcados. Con esto terminamos la instalación de la plataforma. Para iniciar la configuración del servidor central puede hacerlo usando su navegador desde https://10.0.0.10:4000/.
+
+La configuración del Servidor de seguridad puede hacerla usando su navegador desde https://10.0.0.11:4000/.
+
+Actualmente, la documentación de este repositorio solo comprende la instalación de la plataforma. La configuración de la plataforma esta disponible en la sección Manuales de la [documentación del proyecto](https://github.com/ria-ee/X-Road/blob/develop/doc/README.md)
+
+
+  
+
+
