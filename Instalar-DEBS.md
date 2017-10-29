@@ -88,7 +88,7 @@ exit
 vagrant rsync-back
 ```
 
-Los certificados estarán ahora disponibles en la carpeta tenoli/certifcados. Con esto terminamos la instalación de la plataforma. Para iniciar la configuración del servidor central puede hacerlo usando su navegador desde https://10.0.0.10:4000/.
+Los certificados estarán ahora disponibles en la carpeta tenoli/certifcados, encotrará más detalles en la [guía de la CA de pruebas, capitulo 6](https://github.com/ria-ee/X-Road/blob/develop/ansible/TESTCA.md). Con esto terminamos la instalación de la plataforma. Para iniciar la configuración del servidor central puede hacerlo usando su navegador desde https://10.0.0.10:4000/.
 
 La configuración del Servidor de seguridad puede hacerla usando su navegador desde https://10.0.0.11:4000/.
 
