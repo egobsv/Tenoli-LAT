@@ -78,7 +78,8 @@ vagrant up
 
 ```
 
-* Obtener certificados de autoridad certificadora, copiarlos a carpeta del proyecto.
+* Al terminar la instalación la Autoridad Certificadora tendrá activado el servicio de sellado de tiempo disponible en http://10.0.0.13:8899 y el servicio de  OCSP disponible en  http://10.0.0.13:8888. El siguiente paso es obtener certificados de autoridad certificadora, copiarlos a carpeta del proyecto. Estos certificados se usaran durante la configuración de la plataforma. 
+
 
 ```
 vagrant ssh ca
