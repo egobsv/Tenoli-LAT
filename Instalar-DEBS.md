@@ -92,7 +92,7 @@ Los certificados estarán ahora disponibles en la carpeta tenoli/certifcados, en
 
 La configuración del Servidor de seguridad puede hacerla usando su navegador desde https://10.0.0.11:4000/.
 
-Actualmente, la documentación de este repositorio solo comprende la instalación de la plataforma. La configuración inicial de la plataforma es parte de la documentación oficial, en la [sección disponible en este enlace](https://github.com/ria-ee/X-Road/blob/develop/doc/Manuals/ig-cs_x-road_6_central_server_installation_guide.md#33-configuring-the-central-server-and-the-management-services-security-server)
+Actualmente, la documentación de este repositorio solo comprende la instalación de la plataforma. La configuración inicial de la plataforma es parte de la documentación oficial, en la [sección disponible en este enlace](https://github.com/ria-ee/X-Road/blob/develop/doc/Manuals/ig-cs_x-road_6_central_server_installation_guide.md#3-initial-configuration)
 
 
   
