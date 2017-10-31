@@ -11,7 +11,7 @@ La plataforma tiene tres componentes principales:
 
 3-Una autoridad de certificación y sellado de tiempo encargada de emitir certificados y validar los certificados de identidad y firma en cada transacción realizada en la plataforma. 
 
-**Nota**: La instalación inicial usa OpenSSL como Autoridad Certificadora para hacer pruebas. Para usar la plataforma en producción se recomienda usar un proveedor comercial o una Autoridad Certifcadora interna más robusta. Como ejemplo, este documento muestra los [pasos para instalar EJBCA](https://github.com/egobsv/Tenoli-LAT/blob/master/IOP-XROAD-InstalacionCA-XROAD-V1.0.0.pdf). 
+**Nota**: La instalación inicial usa OpenSSL como Autoridad Certificadora para hacer pruebas. Para usar la plataforma en producción se recomienda usar un proveedor comercial o una Autoridad Certifcadora interna más robusta. Como ejemplo, [puede usar EJBCA](https://github.com/egobsv/certificadora). 
 
 Actualmente, la documentación de este repositorio solo comprende la instalación de la plataforma. La configuración de la plataforma esta disponible en la sección Manuales de la [documentación del proyecto](https://github.com/ria-ee/X-Road/blob/develop/doc/README.md) 
  
