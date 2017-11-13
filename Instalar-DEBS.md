@@ -13,7 +13,7 @@ A continuación se detallan los pasos para instalar los paquetes DEB de la plata
 ```
 mkdir -p tenoli-base/paquetes_ES
 cp [RUTA-DEBS]/* tenoli-base/paquetes_ES/
-cp copiaRepo/instalar-tenoliBase.sh tenoli/
+cp copiaRepo/crear-tenoliBase.sh tenoli-basse/
 cd tenoli-base
 ```
 
@@ -30,8 +30,8 @@ vagrant up
 ```
 vagrant ssh
 cd /vagrant
-sudo chmod +x instalar-tenoliBase.sh
-sudo ./instalar-tenoliBase.sh
+sudo chmod +x crear-tenoliBase.sh
+sudo ./crear-tenoliBase.sh
 ```
 
 * Limpiar y reducir tamaño de la maquina 
@@ -52,7 +52,7 @@ vagrant box add tenoliBase tenoliBase.box
 
 2. Instalar plataforma 
 
-* Crear carpeta del proyecto, copiar archivos. 
+* Crear carpeta del proyecto que llamaremos 'tenoli' con una carpeta al interior para guardar certificados, luego copiar archivos como se muestra a continuación. 
 
 ```
 mkdir -p tenoli/certificados
@@ -71,7 +71,7 @@ nano ss-respuestas.txt
 nano openssl-ca/home/ca/CA/init.sh
 ```
 
-* Aplicar script de creación de maquinas virtuales (Vagrantfile). Este script usa tenoliBase para crear un servidor central (sc), dos servidores de seguridad (ss1 y ss2) y una autoridad certificadora (ca).
+* Aplicar script de creación de maquinas virtuales (Vagrantfile). Este script usa la maquina tenoliBase para crear un servidor central (sc), dos servidores de seguridad (ss1 y ss2) y una autoridad certificadora (ca).
 
 ```
 vagrant up
