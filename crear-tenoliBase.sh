@@ -22,7 +22,7 @@
      cd /home/xroad;
      dpkg-scanpackages . /dev/null | gzip -9c > Packages.gz;
      touch /etc/apt/sources.list.d/local.list;
-     echo "deb file:/home/xroad ./" >>  touch /etc/apt/sources.list.d/local.list; 
+     echo "deb file:/home/xroad ./" >> /etc/apt/sources.list.d/local.list; 
      apt-get update;
 
    ##Agregar nombres de dominio para Servidor Central, 
