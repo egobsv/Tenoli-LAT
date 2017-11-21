@@ -13,7 +13,7 @@ A continuación se detallan los pasos para instalar los paquetes DEB de la plata
 ```
 mkdir -p tenoli-base/paquetes_ES
 cp [RUTA-DEBS]/* tenoli-base/paquetes_ES/
-cp copiaRepo/crear-tenoliBase.sh tenoli-basse/
+cp copiaRepo/crear-tenoliBase.sh tenoli-base/
 cd tenoli-base
 ```
 
