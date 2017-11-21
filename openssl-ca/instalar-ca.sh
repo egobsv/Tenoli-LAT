@@ -17,4 +17,3 @@ touch /var/log/ocsp.log;
 chown ca:ca /var/log/ocsp.log;
 chmod g+rw /var/log/ocsp.log;
 /sbin/start ocsp;
-/sbin/start ocsp;
