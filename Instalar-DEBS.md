@@ -8,7 +8,7 @@ A continuación se detallan los pasos para instalar los paquetes DEB de la plata
 
 1. Crear Maquina Virtual base 
 
-* Crear carpeta del proyecto, agregar paquetes DEB.
+* Crear carpeta del proyecto, agregar paquetes DEB, copiar script con los comandos de configuracion inicial 'crear-tenoliBase.sh'.
 
 ```
 mkdir -p tenoli-base/paquetes_ES
@@ -25,7 +25,7 @@ vagrant up
 
 ```
 
-* Entrar a la nueva maquina virtual, instalar dependencias/librerías, crear repositorio local, agregar nombres de dominio.
+* Entrar a la nueva maquina virtual, ejecutar script con los comandos de configuracion inicial 'crear-tenoliBase.sh'. El script se encarga de instalar dependencias/librerías, crear repositorio local y agregar nombres de dominio.
 
 ```
 vagrant ssh
