@@ -22,13 +22,13 @@ Un resumen de la instalación de prueba usando Ansible y el repositorio oficial 
 
 ## Instalar versión en Español
 
-Por ahora la traducción al Español no esta incluida en el código del proyecto. Para usar la plataforma en idioma Español existen dos opciones:
+Por ahora la traducción al Español no está incluida en el código oficial del proyecto. Para usar la plataforma en idioma Español existen dos opciones:
 
-1. Descargar paquetes compilados que incluyen la traducción al Español desde [esta dirección](http://tenoli.gobiernoelectronico.gob.sv/debs/) 
+OPCIÓN 1. Descargar paquetes compilados que incluyen la traducción al Español desde [esta dirección](http://tenoli.gobiernoelectronico.gob.sv/debs/) 
 
 La instalación de los paquetes DEB está [documentada en este enlace](https://github.com/egobsv/Tenoli-LAT/blob/master/Instalar-DEBS.md).
 
-2. Compilar los paquetes incluyendo la traducción al Español. Antes de iniciar asegúrese de descargar a su maquina todos los archivos de este repositorio. En adelante se asume que esa copia existe en la carpeta 'copiaRepo'. A continuación se detallan cada uno de los pasos
+OPCIÓN 2. Compilar los paquetes incluyendo la traducción al Español. Antes de iniciar asegúrese de descargar a su maquina todos los archivos de este repositorio. En adelante se asume que esa copia existe en la carpeta 'copiaRepo'. A continuación se detallan cada uno de los pasos
 
 * Descargar el código fuente de X-Road dentro de la carpeta 'xroad-code'. La traducción corresponde a la versión 6.16 [disponible en este enlace](https://github.com/ria-ee/X-Road/releases)
 
