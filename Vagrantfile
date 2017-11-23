@@ -8,7 +8,7 @@ Vagrant.configure("2") do |config|
   	echo 'xroad:xroad' | chpasswd;
         hostname sc;
   	debconf-set-selections /vagrant/sc-respuestas.txt;
-        apt-get install --force-yes -y xroad-centralserver;
+        apt-get install --allow-unauthenticated -y xroad-centralserver;
      SHELL
   end
 
@@ -20,7 +20,7 @@ Vagrant.configure("2") do |config|
      echo 'xroad:xroad' | chpasswd;
      hostname ss1;
      debconf-set-selections /vagrant/ss-respuestas.txt;
-     apt-get install --force-yes -y xroad-securityserver;
+     apt-get install --allow-unauthenticated -y xroad-securityserver;
     SHELL
   end
 
@@ -32,7 +32,7 @@ Vagrant.configure("2") do |config|
      echo 'xroad:xroad' | chpasswd;
      hostname ss2;
      debconf-set-selections /vagrant/ss-respuestas.txt
-     apt-get install --force-yes -y xroad-securityserver;
+     apt-get install --allow-unauthenticated -y xroad-securityserver;
    SHELL
   end
 
