@@ -1,5 +1,9 @@
 Vagrant.configure("2") do |config|
-
+  
+  config.vm.provider "virtualbox" do |v|
+   v.customize ["modifyvm", :id, "--memory", "1536"]
+  end
+  
   config.vm.define "sc" do |sc|
   sc.vm.box = "tenoliBase"
   sc.vm.hostname="centralserver"
