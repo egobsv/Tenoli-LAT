@@ -1,6 +1,13 @@
 ## Tenoli-LAT 
 
-Plataforma de interoperabilidad distribuida usando firma electrónica. Esta repositorio contiene la documentación para facilitar la implementación de es plataforma, basada en [X-Road](https://github.com/ria-ee/X-Road/) de Estonia, en Latinoamérica y el Caribe.  
+Plataforma de interoperabilidad distribuida usando firma electrónica. Este repositorio contiene la documentación para facilitar la implementación de esta plataforma, basada en [X-Road](https://github.com/ria-ee/X-Road/) de Estonia, en Latinoamérica y el Caribe.  La plataforma aplica los siguientes estandares:
+
+* PKI - Perfil de certificado de identidad/autorización IETF RFC-5280
+* OCSP - Verificación de Certificados IETF RFC 6960 y RFC 2560.
+* TSA - Sellado electrónico de mensajes  IETF RFC 3161.
+* XaDES - Firma de mensajes electrónicos ETSI EN 319 132
+* eIDAS - Gestión segura de certificados ETSI EN 419 211 (UNE-EN 419211-1:2016)
+* ASiCE - Contenedores firmados y sellados eletrónicamente ETSI EN 319 162 
 
 ## Sobre la plataforma
 La plataforma tiene tres componentes principales:
@@ -10,6 +17,8 @@ La plataforma tiene tres componentes principales:
 2-Uno o más servidores de seguridad instalados en cada institución participante que actúa como pasarela de conexión con la red de intercambio.
 
 3-Una autoridad de certificación y sellado de tiempo encargada de emitir certificados y validar los certificados de identidad y firma en cada transacción realizada en la plataforma. 
+
+El archivo Vagrantfile de este repositorio instala auotmáticamente un servidor central, una autoridad certificadora y dos servidores de seguridad usando maquinas virtuales. 
 
 **Nota**: La instalación inicial usa OpenSSL como Autoridad Certificadora para hacer pruebas. Para usar la plataforma en producción se recomienda usar un proveedor comercial o una Autoridad Certifcadora interna más robusta. Como ejemplo, [puede usar EJBCA](https://github.com/egobsv/certificadora). 
 
