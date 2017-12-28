@@ -9,6 +9,8 @@ Plataforma de interoperabilidad distribuida usando firma electrónica. Este repo
 * eIDAS - Gestión segura de certificados ETSI EN 419 211 (UNE-EN 419211-1:2016)
 * ASiCE - Contenedores firmados y sellados electrónicamente ETSI EN 319 162 
 
+La documentación para el proyecto TENOLI  de El Salvador esta disponible en [esta página](http://tenoli.gobiernoelectronico.gob.sv/) 
+
 ## Sobre la plataforma
 La plataforma tiene tres componentes principales:
 
