@@ -28,6 +28,7 @@ Para instalar cada Servidor de Seguridad, utilice el siguiente comando:
 ```
 apt-get install --allow-unauthenticated -y xroad-securityserver;
 ```
+La instalación de la plataforma con todos sus componentes usando Vagrant [esta documentada aquí](instalar-vagrant.md)
 
 ### Licencia
 

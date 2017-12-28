@@ -39,11 +39,11 @@ OPCIÓN 1. Descargar paquetes compilados que incluyen la traducción al Español
 
 La instalación de los paquetes DEB está documentada para:
 
-[Instalar en Ubuntu-Trusty](ubuntu-trusty/instalar-trusty.md)
+[Instalar en Ubuntu-Trusty](ubuntu-trusty/README.md)
 
-[Instalar en Ubuntu-Xenial](ubuntu-trusty/instalar-xenial.md)
+[Instalar en Ubuntu-Xenial](ubuntu-trusty/README.md)
 
-OPCIÓN 2. Compilar los paquetes incluyendo la traducción al Español. Puede seguir las instrucciones disponibles en [esta página](compilar/compilar.md)
+OPCIÓN 2. Compilar los paquetes incluyendo la traducción al Español. Puede seguir las instrucciones disponibles en [esta página](compilar/README.md)
 
 
 ### Licencia
