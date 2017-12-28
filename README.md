@@ -43,7 +43,7 @@ La instalación de los paquetes DEB está documentada para:
 
 [Instalar en Ubuntu-Trusty](ubuntu-trusty/README.md)
 
-[Instalar en Ubuntu-Xenial](ubuntu-trusty/README.md)
+[Instalar en Ubuntu-Xenial](ubuntu-xenial/README.md)
 
 OPCIÓN 2. Compilar los paquetes incluyendo la traducción al Español. Puede seguir las instrucciones disponibles en [esta página](compilar/README.md)
 
