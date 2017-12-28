@@ -1,0 +1,14 @@
+[Unit]
+Description=Servicio Sellado de Tiempo
+After=network.target
+
+[Service]
+WorkingDirectory=/home/ca/TSA
+User=ocsp
+Group=ca
+ExecStart=/usr/bin/python3 tsa_server.py
+Restart=on-failure
+SuccessExitStatus=143
+
+[Install]
+WantedBy=multi-user.target

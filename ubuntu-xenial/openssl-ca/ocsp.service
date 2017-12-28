@@ -1,0 +1,14 @@
+[Unit]
+Description=Servicio OCSP
+After=network.target
+
+[Service]
+WorkingDirectory=/home/ca/CA
+User=ocsp
+Group=ca
+ExecStart=/usr/bin/openssl ocsp -index index.txt -url http://localhost:8889 -rsigner certs/ocsp.cert.pem -rkey private/ocsp.key.pem -CA certs/ca.cert.pem -text -out /var/log/ocsp.log
+Restart=on-failure
+SuccessExitStatus=143
+
+[Install]
+WantedBy=multi-user.target

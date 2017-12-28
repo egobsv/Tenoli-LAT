@@ -1,11 +1,11 @@
 
-## Instalación usando Paquetes DEB
+## Instalación de Prueba usando Vagrant
 
-A continuación se detallan los pasos para instalar los paquetes DEB de la plataforma en un ambiente de prueba con todos sus componentes usando Vagrant. El archivo Vagrantfile de este repositorio instala auotmáticamente un servidor central, una autoridad certificadora y dos servidores de seguridad usando maquinas virtuales dentro.
+Acá se detallan los pasos para instalar los paquetes DEB de la plataforma en un ambiente de prueba con todos sus componentes usando Vagrant. El archivo Vagrantfile de este repositorio instala automáticamente un servidor central, una autoridad certificadora y dos servidores de seguridad usando maquinas virtuales.
 
 Para acelerar el proceso de instalación primero crearemos una máquina virtual base con todas las librerías necesarias. En adelante se asume que una copia de este repositorio esta disponible en su maquina en una carpeta llamada 'copiaRepo'
 
-**Nota**: La plataforma solo esta disponible para Ubuntu Trusty.
+**Nota**: Este script solo esta disponible para Ubuntu Trusty.
 
 
 1. Crear Maquina Virtual base 
@@ -97,6 +97,8 @@ La configuración del Servidor de seguridad puede hacerla usando su navegador de
 Actualmente, la documentación de este repositorio solo comprende la instalación de la plataforma. La configuración inicial de la plataforma es parte de la documentación oficial, en la [sección disponible en este enlace](https://github.com/ria-ee/X-Road/blob/develop/doc/Manuals/ig-cs_x-road_6_central_server_installation_guide.md#3-initial-configuration)
 
 
-  
+### Licencia
+
+Este trabajo esta cubierto dentro de la estrategia de desarrollo de servicios de Gobierno Electrónico del Gobierno de El Salvador y como tal es una obra de valor público sujeto a los lineamientos de la Política de Datos Abiertos y la licencia [CC-BY-SA](https://creativecommons.org/licenses/by-sa/3.0/deed.es).   
 
 
