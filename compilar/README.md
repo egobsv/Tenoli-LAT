@@ -16,7 +16,7 @@ xroad-code/src/common-util/src/main/java/ee/ria/xroad/common/certificateprofile/
 ```
 xroad-code/src/common-util/src/main/java/ee/ria/xroad/common/certificateprofile/impl/
 ```
-* 4- CertificateProfileInfoProvider: Información del proveedor de certificados, incluye la información del certificado de firma y Autenticación, Ejemplo TENOLIAuthCertificateProfileInfo.java. Este Archivo debe incluirse en la carpeta 
+* 4- CertificateProfileInfoProvider: Información del proveedor de certificados, incluye la información del certificado de firma y Autenticación, Ejemplo TENOLICertificateProfileInfoProvider.java. Este Archivo debe incluirse en la carpeta 
 ```
 xroad-code/src/common-util/src/main/java/ee/ria/xroad/common/certificateprofile/impl/
 ```
