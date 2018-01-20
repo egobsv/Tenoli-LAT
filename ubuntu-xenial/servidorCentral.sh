@@ -36,6 +36,7 @@ dpkg -i debs/xroad-centralserver-monitoring_6.16.0-1_all.deb debs/xroad-centrals
 systemctl start xroad-confclient.service;
 
 dpkg -i debs/xroad-autologin_6.16.0-1_all.deb;
+cp xroad-autologin.service /etc/systemd/system/;
 touch /etc/xroad/autologin;
 chown xroad:xroad /etc/xroad/autologin;
 
@@ -44,8 +45,8 @@ chown xroad:xroad /etc/xroad/autologin;
 # para poder pocesar peticiones, este paquete automaiza esa funcion.
 
 ##NUMERO PIN
-echo "12345" >> /etc/xroad/autologin;
-systemctl enable xroad-autologin.service;
-systemctl start xroad-autologin.service;
+#echo "12345" >> /etc/xroad/autologin;
+#systemctl enable xroad-autologin.service;
+#systemctl start xroad-autologin.service;
 
 
