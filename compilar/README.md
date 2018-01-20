@@ -4,14 +4,22 @@ Antes de iniciar asegúrese de descargar descargar el código fuente de X-Road d
 ### Agregar PKI 
 La palataforma necesita conocer los campos que utilizan los certificados de su PKI, para esto es necesario crear cuatro classes en Java:
 
-1- SubjectClientIdDecoder:  Describe los campos incluidos en el Sujeto de los certificados, Ejemplo SVSubjectClientIdDecoder.java. Este Archivo debe incluirse en la carpeta xroad-code/src/common-util/src/main/java/ee/ria/xroad/common/util/
-
-2- SignCertificateProfileInfo: Información del certificado de Firma, Ejemplo TENOLISignCertificateProfileInfo.java. Este Archivo debe incluirse en la carpeta xroad-code/src/common-util/src/main/java/ee/ria/xroad/common/certificateprofile/impl/
-
-3- AuthCertificateProfileInfo: Información del certificado de Autenticación de clientes, Ejemplo TENOLIAuthCertificateProfileInfo.java. Este Archivo debe incluirse en la carpeta xroad-code/src/common-util/src/main/java/ee/ria/xroad/common/certificateprofile/impl/
-
-4- CertificateProfileInfoProvider: Información del proveedor de certificados, incluye la información del certificado de firma y Autenticación, Ejemplo TENOLIAuthCertificateProfileInfo.java. Este Archivo debe incluirse en la carpeta xroad-code/src/common-util/src/main/java/ee/ria/xroad/common/certificateprofile/impl/
-
+* 1- SubjectClientIdDecoder:  Describe los campos incluidos en el Sujeto de los certificados, Ejemplo SVSubjectClientIdDecoder.java. Este Archivo debe incluirse en la carpeta
+```
+ xroad-code/src/common-util/src/main/java/ee/ria/xroad/common/util/
+```
+* 2- SignCertificateProfileInfo: Información del certificado de Firma, Ejemplo TENOLISignCertificateProfileInfo.java. Este Archivo debe incluirse en la carpeta
+``` 
+xroad-code/src/common-util/src/main/java/ee/ria/xroad/common/certificateprofile/impl/
+```
+* 3- AuthCertificateProfileInfo: Información del certificado de Autenticación de clientes, Ejemplo TENOLIAuthCertificateProfileInfo.java. Este Archivo debe incluirse en la carpeta 
+```
+xroad-code/src/common-util/src/main/java/ee/ria/xroad/common/certificateprofile/impl/
+```
+* 4- CertificateProfileInfoProvider: Información del proveedor de certificados, incluye la información del certificado de firma y Autenticación, Ejemplo TENOLIAuthCertificateProfileInfo.java. Este Archivo debe incluirse en la carpeta 
+```
+xroad-code/src/common-util/src/main/java/ee/ria/xroad/common/certificateprofile/impl/
+```
  ### Agregar Idioma al Español
 
 
