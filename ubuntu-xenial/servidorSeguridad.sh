@@ -6,7 +6,7 @@ echo 'xroad:xroad' | chpasswd;
 cp /vagrant/dependencias/* /var/cache/apt/archives/;
 apt-get update;
 apt-get install -y openjdk-8-jre-headless ca-certificates-java crudini rlwrap ntp unzip expect authbind;
-apt-get install -y nginx-light postgresql postgresql-contrib postgresql-9.5 postgresql-client-9.5 libmhash2;
+apt-get install -y nginx-light postgresql postgresql-contrib postgresql-client libmhash2;
 cd /vagrant/scripts;
 debconf-set-selections ss-respuestas.txt;
 
@@ -56,6 +56,10 @@ chown xroad:xroad /etc/xroad/autologin;
 systemctl start xroad-proxy.service;
 systemctl start xroad-monitor.service;
 systemctl start xroad-opmonitor.service;
+
+###OPCIONAL 
+# Al reiniciar el servidor es necesario ingresar el PIN del SoftToken
+# para poder pocesar peticiones, este paquete automaiza esa funcion.
 
 ##NUMERO PIN 
 echo "12345" >> /etc/xroad/autologin;
