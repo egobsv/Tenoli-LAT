@@ -20,6 +20,7 @@ xroad-code/src/common-util/src/main/java/ee/ria/xroad/common/certificateprofile/
 ```
 xroad-code/src/common-util/src/main/java/ee/ria/xroad/common/certificateprofile/impl/
 ```
+
  ### Agregar Idioma Español
 
 
@@ -29,6 +30,10 @@ cp ESfiles-6.16/center-ui/* xroad-code/src/center-ui/config/locales/;
 cp ESfiles-6.16/common-ui/* xroad-code/src/common-ui/config/locales/;
 cp ESfiles-6.16/proxy-ui/* xroad-code/src/proxy-ui/config/locales/;
 cd xroad-code/src;
+```
+Modifique la variable 'cert_profile_info_hint' dentro del archivo xroad-code/code/src/center-ui/config/locales/views_es.yml para mencionar la clase que usa su PKI, ejemplo:
+```
+cert_profile_info_hint: "(Nombre de dominio que implementa la interfaz \n ee.ria.xroad.common.certificateprofile.impl.TENOLICertificateProfileInfoProvider)"
 ```
 Luego de copiar los archivos debe cambiar el idioma por defecto de la plataforma modificando la variable config.i18n.default_locale (':en' por ':es') dentro de los archivos: 
 
