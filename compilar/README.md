@@ -20,7 +20,7 @@ xroad-code/src/common-util/src/main/java/ee/ria/xroad/common/certificateprofile/
 ```
 xroad-code/src/common-util/src/main/java/ee/ria/xroad/common/certificateprofile/impl/
 ```
- ### Agregar Idioma al Español
+ ### Agregar Idioma Español
 
 
 Los archivos de traducción al Español están incluidos en el comprimido ESfiles-6.16.zip. Luego de descargarlo y expandirlo tendrá una carpeta ESfiles-6.16; debe copiar los archivos de traducción al código fuente como se muestra a continuación:
