@@ -29,11 +29,11 @@ Actualmente, la documentación de este repositorio solo comprende la instalació
 Actualmente el código de [X-Road publicado en Github](https://github.com/ria-ee/X-Road) es administrado por un equipo cerrado de desarrolladores de Estonia y Finlandia, no es posible contribuir al proyecto. Los paquetes oficiales, compilados por el equipo de X-Road, solo están disponibles en Inglés y utilizan la PKI de Finlandia. Sin embargo es posible descargar el código fuente y adecuarlo para cualquier país.
 
 ### Modificación del país
-  La plataforma necesita los servicio de una PKI,  las rutinas de verificación de certificados validan que dentro del sujeto exista el valor C=FI, es decir que el país  de origen sea Finlandia. Para modifier esto es necesario crear cuatro archivos, clases de Java, con las rutinas necesarias para trabajar con los certificados de su proveedor PKI. Para mayores detalles revise las [indicaciones de compilación](compilar/README.md) de la plataforma
+  La plataforma necesita los servicio de una PKI,  las rutinas de verificación de certificados validan que dentro del sujeto exista el valor C=FI, es decir que el país  de origen sea Finlandia. Para modifier esto es necesario crear cuatro archivos, clases de Java, con las rutinas necesarias para trabajar con los certificados de su proveedor PKI. Para mayores detalles revise las [indicaciones de compilación](compilar/) de la plataforma
 
 ### Modificación del idioma
 
-El código fuente de X-Road solo incluye los idiomas Inglés y Finlandés. Se han hecho consultas y no es posible incluir la traducción al Español en el código oficial del proyecto. Para compilar los paquetes incluyendo la traducción al Español puede seguir las instrucciones disponibles en [esta página](compilar/README.md)
+El código fuente de X-Road solo incluye los idiomas Inglés y Finlandés. Se han hecho consultas y no es posible incluir la traducción al Español en el código oficial del proyecto. Para compilar los paquetes incluyendo la traducción al Español puede seguir las instrucciones disponibles en [esta página](compilar/)
 
 
 ### Probar la plataforma
