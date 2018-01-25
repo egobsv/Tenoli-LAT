@@ -62,6 +62,6 @@ systemctl start xroad-opmonitor.service;
 # para poder pocesar peticiones, este paquete automaiza esa funcion.
 
 ##NUMERO PIN 
-echo "12345" >> /etc/xroad/autologin;
-systemctl enable xroad-autologin.service;
-systemctl start xroad-autologin.service;
+#echo "12345" >> /etc/xroad/autologin;
+#systemctl enable xroad-autologin.service;
+#systemctl start xroad-autologin.service;
