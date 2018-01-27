@@ -37,7 +37,6 @@ systemctl start xroad-confclient.service;
 
 dpkg -i debs/xroad-autologin_6.16.0-1_all.deb;
 cp xroad-autologin.service /etc/systemd/system/;
-mkdir /etc/xroad/;
 touch /etc/xroad/autologin;
 chown xroad:xroad /etc/xroad/autologin;
 
