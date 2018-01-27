@@ -59,7 +59,7 @@ Una vez terminada la compilación los paquetes de instalación estarán disponib
 Paquetes .DEB en xroad-code/src/packets/ 
 Paquetes  .RPM en xroad-code/src/packets/xroad/redhat/RMPS/
 ```
-La instalación de los paquetes DEB está [documentada en este enlace](https://github.com/egobsv/Tenoli-LAT/blob/master/Instalar-Trusty.md).
+La instalación de los paquetes DEB está [documentada en este enlace](https://github.com/egobsv/Tenoli-LAT/tree/master/ubuntu-xenial).
 
 
 ## Licencia
