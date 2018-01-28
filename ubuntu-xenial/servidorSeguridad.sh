@@ -26,8 +26,7 @@ chmod +x /usr/share/xroad/bin/xroad-confclient;
 cp xroad-confclient.service /etc/systemd/system/;
 systemctl enable xroad-signer.service;
 systemctl enable xroad-confclient.service;
-systemctl start xroad-confclient.service;
-systemctl start xroad-signer.service;
+
 
 cp xroad-proxy-port-redirect.sh /usr/share/xroad/scripts/;
 cp xroad-proxy /usr/share/xroad/bin/;
@@ -53,9 +52,12 @@ dpkg -i debs/xroad-securityserver_6.16.0-1_all.deb debs/xroad-autologin_6.16.0-1
 
 touch /etc/xroad/autologin;
 chown xroad:xroad /etc/xroad/autologin;
+systemctl start xroad-confclient.service;
+systemctl start xroad-signer.service;
 systemctl start xroad-proxy.service;
 systemctl start xroad-monitor.service;
 systemctl start xroad-opmonitor.service;
+
 
 ###OPCIONAL 
 # Al reiniciar el servidor es necesario ingresar el PIN del SoftToken
