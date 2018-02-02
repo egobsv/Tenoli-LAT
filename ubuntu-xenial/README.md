@@ -5,13 +5,11 @@ Los paquetes oficiales de X-Road solo pueden ser instalados en Ubuntu Trusty. Pa
 
 ### Cuál es la diferencia entre Trusty y Xenial?
 
-1. Los paquetes de Xroad se ejecutan como servicios dentro del servidor. Estos servicios están configurados usando Upstart en Trusty. Xenial usa SystemD en lugar de Upstart. Por ahora es necesario configurar los servicios manualmente (los cambios podrían compilarse dentro de los paquetes, si alguien tiene tiempo de hacerlo sera bienvenido!). 
-
-2. Por ahora, la sección interactiva de instalación del paquete DEB no funciona en Xenial. Los archivos de respuestas (sc-respuestas.txt y ss-respuestas.txt) contienen los valores que se usan en las instalación y deben ser editados según corresponda.  
-
+Los paquetes de Xroad se ejecutan como servicios dentro del servidor. Estos servicios están configurados usando Upstart en Trusty. Xenial usa SystemD en lugar de Upstart. Por ahora es necesario configurar los servicios manualmente (los cambios podrían compilarse dentro de los paquetes, si alguien tiene tiempo de hacerlo sera bienvenido!). 
+ 
 
 ### Instalación de Servidor
-En una nueva instalación de Ubuntu Xenial, descargue la carpeta ubuntu-xenial de este repositorio y cópiela en la carpeta /opt.  Luego, con privilegios de Administrador/Root, ejecute los siguientes comandos:
+En una nueva instalación de Ubuntu Xenial, descargue la carpeta ubuntu-xenial de este repositorio y cópiela en la carpeta /opt. Dentro de la carpeta scripts, edite los archivos de respuestas (sc-respuestas.txt y ss-respuestas.txt) que contienen los valores que se usan en la instalación. Luego, con privilegios de Administrador/Root, ejecute los siguientes comandos:
 
 - Para instalar el servidor central
 ```
