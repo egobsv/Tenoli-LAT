@@ -22,6 +22,13 @@ chmod +x servidorCentral.sh
 chmod +x servidorSeguridad.sh
 ./servidorSeguridad.sh
 ```
+### Instalación de adaptador REST
+La plataforma esta diseñada para trabjar con mensajes SOAP/XML, el adaptador REST es un módulo adicional que permite usar mensajes JSON y su código fuente esta disponible en [este sitio](https://github.com/vrk-kpa/REST-adapter-service). Puede descargar el paquete de Xenial desde [esta ruta](http://tenoli.gobiernoelectronico.gob.sv/debs/rest-adapter-service.deb). Para instalarlo, descarguelo dentro del Servidor de Seguridad y ejecute el siguiente comando:
+```
+dpkg -i rest-adapter-service.deb 
+```
+Los archivos de confirguración del módulo están disponibles en /etc/rest-adapter-service. Puede encontrar ejemplos detallados dentro de [la documentación](https://github.com/vrk-kpa/REST-adapter-service/blob/master/documentation/Rest-Adapter-Service-principles.md). La página del servicio esta disponible en http://[ip servidor]:8080/rest-service-adapter.
+
 
 ### Instalación usando Vagrant
 
