@@ -36,7 +36,7 @@ dpkg -i debs/xroad-centralserver-monitoring_6.16.0-1_all.deb debs/xroad-centrals
 systemctl start xroad-confclient.service;
 
 dpkg -i debs/xroad-autologin_6.16.0-1_all.deb;
-cp /vagrant/scripts/xroad-autologin-retry.sh /usr/share/xroad/autologin/;
+cp /opt/scripts/xroad-autologin-retry.sh /usr/share/xroad/autologin/;
 chown xroad:xroad /usr/share/xroad/autologin/xroad-autologin-retry.sh;
 cp xroad-autologin.service /etc/systemd/system/;
 touch /etc/xroad/autologin;
