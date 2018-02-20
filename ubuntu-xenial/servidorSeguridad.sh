@@ -48,7 +48,7 @@ systemctl enable xroad-opmonitor.service;
 dpkg -i --force-confnew debs/xroad-proxy_6.16.0-1_all.deb debs/xroad-addon-wsdlvalidator_6.16.0-1_all.deb;
 dpkg -i debs/xroad-monitor_6.16.0-1_all.deb  debs/xroad-opmonitor_6.16.0-1_all.deb debs/xroad-addon-proxymonitor_6.16.0-1_all.deb; 
 dpkg -i debs/xroad-addon-messagelog_6.16.0-1_all.deb debs/xroad-addon-metaservices_6.16.0-1_all.deb;
-dpkg -i debs/xroad-securityserver_6.16.0-1_all.deb debs/xroad-autologin_6.16.0-1_all.deb debs/rest-adapter-service.deb;
+dpkg -i debs/xroad-securityserver_6.16.0-1_all.deb debs/xroad-autologin_6.16.0-1_all.deb;
 
 touch /etc/xroad/autologin;
 chown xroad:xroad /etc/xroad/autologin;
