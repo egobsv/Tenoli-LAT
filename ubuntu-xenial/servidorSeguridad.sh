@@ -3,11 +3,11 @@
 timedatectl set-timezone America/El_Salvador;
 useradd -m xroad;
 echo 'xroad:xroad' | chpasswd;
-cp /vagrant/dependencias/* /var/cache/apt/archives/;
+#cp /vagrant/dependencias/* /var/cache/apt/archives/;
 apt-get update;
 apt-get install -y openjdk-8-jre-headless ca-certificates-java crudini rlwrap ntp unzip expect authbind;
 apt-get install -y nginx-light postgresql postgresql-contrib postgresql-client libmhash2;
-cd /vagrant/scripts;
+cd /opt/scripts;
 debconf-set-selections ss-respuestas.txt;
 
 dpkg -i debs/xroad-common_6.16.0-1_amd64.deb debs/xroad-jetty9_6.16.0-1_all.deb;
