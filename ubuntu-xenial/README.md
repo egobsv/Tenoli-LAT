@@ -9,7 +9,7 @@ Los paquetes de Xroad se ejecutan como servicios dentro del servidor. Estos serv
  
 
 ### Instalación de Servidor
-En una nueva instalación de Ubuntu Xenial, descargue la carpeta ubuntu-xenial de este repositorio y cópiela en la carpeta /opt. Dentro de la carpeta scripts, edite los archivos de respuestas (sc-respuestas.txt y ss-respuestas.txt) que contienen los valores que se usan en la instalación. Luego, con privilegios de Administrador/Root, ejecute los siguientes comandos:
+En una nueva instalación de Ubuntu Xenial, descargue la carpeta ubuntu-xenial de este repositorio y cópiela en la carpeta /opt. Dentro de la carpeta scripts, edite los archivos de respuestas (sc-respuestas.txt y ss-respuestas.txt) que contienen los valores que se usan en la instalación. Copie los paquetes .DEB dentro de /opt/debs y luego, con privilegios de Administrador/Root, ejecute los siguientes comandos:
 
 - Para instalar el servidor central
 ```
