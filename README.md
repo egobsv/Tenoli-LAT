@@ -20,7 +20,7 @@ La plataforma crea una red segura de intercambio de datos entre instituciones de
 
 El archivo Vagrantfile de este repositorio instala automáticamente un servidor central, una autoridad certificadora y dos servidores de seguridad usando maquinas virtuales. 
 
-**Nota**: La instalación inicial usa OpenSSL para simular los servicios de una PKI y hacer pruebas. Para usar la plataforma en producción se recomienda usar un proveedor comercial o una Autoridad Certificadora interna más robusta. Como ejemplo, [puede usar EJBCA](https://github.com/egobsv/certificadora). 
+**Nota**: La instalación inicial usa OpenSSL para simular los servicios de una PKI y hacer pruebas. Para usar la plataforma en producción se recomienda usar un proveedor comercial o una Autoridad Certificadora interna más robusta. Como ejemplo, [puede usar EJBCA](https://github.com/egobsv/certificadora) e importar los perfiles de certificados EJBCAcertprofiles-TENOLI.zip, EJBCAentityprofiles-TENOLI.zip. 
 
 Actualmente, la documentación de este repositorio solo comprende la instalación de la plataforma. La configuración de la plataforma está disponible en la sección Manuales de la [documentación de X-Road](https://github.com/ria-ee/X-Road/blob/develop/doc/README.md) 
  
