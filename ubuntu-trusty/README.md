@@ -1,6 +1,10 @@
 ## Instalar Servidor usando Unbuntu Trusty
 
-Antes de iniciar asegurese de [descargar los paquetes DEB](http://tenoli.gobiernoelectronico.gob.sv/debs/), estos paquetes se compilaron usando la traduccion al Español. A continuacion en una nueva instalacion de Ubuntu Trusty con privilegios de Administrador/Root, ejecute los siguientes comandos:
+Antes de iniciar asegurese de obtener/[compilar](https://github.com/egobsv/Tenoli-LAT/tree/master/compilar) sus paquetes DEB.
+
+Los paquetes utilizados por el Gobierno de El Salvador estan disponibles [en este enlace](http://tenoli.gobiernoelectronico.gob.sv/debs/).
+
+A continuación en una nueva instalación de Ubuntu Trusty con privilegios de Administrador/Root, ejecute los siguientes comandos:
 ```
 useradd -m xroad;    
 passwd xroad;
