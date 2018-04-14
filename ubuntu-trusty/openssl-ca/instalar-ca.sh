@@ -1,9 +1,8 @@
 groupadd ca;
-useradd ca;
-useradd ocsp;
+useradd -g ca ca;
+useradd -g ca ocsp;
 useradd signer -m -s /bin/bash;
 echo "signer:signer" | chpasswd; 
-usermod -aG ca ocsp;
 cp -r etc /;
 cp -r home /;
 cp -r usr /;
