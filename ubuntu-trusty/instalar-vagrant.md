@@ -1,12 +1,11 @@
 
 ## Instalación de Prueba usando Vagrant
 
+**Nota**: Este script utiliza Ubuntu Trusty. Se recomienda utilizar la última [version disponible para Ubuntu Xenial](https://github.com/egobsv/Tenoli-LAT/tree/master/ubuntu-xenial) .
+
 Acá se detallan los pasos para instalar los paquetes DEB de la plataforma en un ambiente de prueba con todos sus componentes usando Vagrant. El archivo Vagrantfile de este repositorio instala automáticamente un servidor central, una autoridad certificadora y dos servidores de seguridad usando maquinas virtuales.
 
 Para acelerar el proceso de instalación primero crearemos una máquina virtual base con todas las librerías necesarias. En adelante se asume que una copia de este repositorio esta disponible en su maquina en una carpeta llamada 'copiaRepo'
-
-**Nota**: Este script solo esta disponible para Ubuntu Trusty.
-
 
 1. Crear Maquina Virtual base 
 
