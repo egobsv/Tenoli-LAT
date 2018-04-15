@@ -1,3 +1,4 @@
+service nginx stop;
 groupadd ca;
 useradd -g ca ca;
 useradd -g ca ocsp;
@@ -17,3 +18,4 @@ chown ca:ca /var/log/ocsp.log;
 chmod g+rw /var/log/ocsp.log;
 /sbin/start ocsp;
 /sbin/start tsa;
+service nginx start;
