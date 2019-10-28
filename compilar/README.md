@@ -35,7 +35,17 @@ Modifique la variable 'cert_profile_info_hint' dentro del archivo xroad-code/cod
 ```
 cert_profile_info_hint: "(Nombre de dominio que implementa la interfaz \n ee.ria.xroad.common.certificateprofile.impl.TENOLICertificateProfileInfoProvider)"
 ```
-Luego de copiar los archivos debe cambiar el idioma por defecto de la plataforma modificando la variable config.i18n.default_locale (':en' por ':es') dentro de los archivos: 
+Luego de copiar los archivos debe cambiar el idioma por defecto; para esto reemplace la línea:
+```
+config.i18n.default_locale = :en
+```
+Con estas dos líneas:
+```
+  config.i18n.enforce_available_locales = false
+  config.i18n.default_locale = :es
+```
+
+Este mismo cambio debe aplicarse en los siguientes tres archivos: 
 
 ```
 xroad-code/src/center-service/config/application.rb 
