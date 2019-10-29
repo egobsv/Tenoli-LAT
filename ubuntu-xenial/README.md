@@ -16,6 +16,7 @@ En una nueva instalación de Ubuntu Xenial, descargue la carpeta ubuntu-xenial d
 chmod +x servidorCentral.sh
 ./servidorCentral.sh
 ```
+La configuración del servidor central esta descrita en la [documentación oficial de X-Road](https://github.com/nordic-institute/X-Road/blob/6.22.0/doc/Manuals/ig-cs_x-road_6_central_server_installation_guide.md#33-configuring-the-central-server-and-the-management-services-security-server) 
 
 - Para instalar el servidor de seguridad
 ```
