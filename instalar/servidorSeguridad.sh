@@ -4,7 +4,7 @@ timedatectl set-timezone America/El_Salvador;
 hostnamectl set-hostname ss1.tenoli.gob.sv
 useradd -m xroad;
 echo 'xroad:xroad' | chpasswd;
-cp /vagrant/dependencias/* /var/cache/apt/archives/;
+
 mkdir /opt/tenoli;
 
 #Sus Paquetetes compilados
