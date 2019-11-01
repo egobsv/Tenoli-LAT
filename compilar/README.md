@@ -1,5 +1,5 @@
 ## Modificar y Compilar X-Road
-Antes de iniciar asegúrese de descargar descargar el código fuente de X-Road dentro de la carpeta 'xroad-code'.  La versión 6.16 es la ultima disponible por le momento y puede [descargarla en este enlace](https://github.com/ria-ee/X-Road/releases)
+Antes de iniciar asegúrese de descargar descargar el código fuente de X-Road dentro de la carpeta 'xroad-code'.  La versión 6.22 es la ultima disponible por le momento y puede [descargarla en este enlace](https://github.com/ria-ee/X-Road/releases)
 
 ### Agregar PKI 
 La palataforma necesita conocer los campos que utilizan los certificados de su PKI, para esto es necesario crear cuatro classes en Java:
@@ -24,11 +24,11 @@ xroad-code/src/common-util/src/main/java/ee/ria/xroad/common/certificateprofile/
  ### Agregar Idioma Español
 
 
-Los archivos de traducción al Español están incluidos en el comprimido ESfiles-6.16.zip. Luego de descargarlo y expandirlo tendrá una carpeta ESfiles-6.16; debe copiar los archivos de traducción al código fuente como se muestra a continuación:
+Los archivos de traducción al Español están incluidos en el comprimido ESfiles-6.22.zip. Luego de descargarlo y expandirlo tendrá una carpeta ESfiles-6.22; debe copiar los archivos de traducción al código fuente como se muestra a continuación:
 ```
-cp ESfiles-6.16/center-ui/* xroad-code/src/center-ui/config/locales/;
-cp ESfiles-6.16/common-ui/* xroad-code/src/common-ui/config/locales/;
-cp ESfiles-6.16/proxy-ui/* xroad-code/src/proxy-ui/config/locales/;
+cp ESfiles-6.22/center-ui/* xroad-code/src/center-ui/config/locales/;
+cp ESfiles-6.22/common-ui/* xroad-code/src/common-ui/config/locales/;
+cp ESfiles-6.22/proxy-ui/* xroad-code/src/proxy-ui/config/locales/;
 cd xroad-code/src;
 ```
 Modifique la variable 'cert_profile_info_hint' dentro del archivo xroad-code/code/src/center-ui/config/locales/views_es.yml para mencionar la clase que usa su PKI, ejemplo:
