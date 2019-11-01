@@ -39,9 +39,7 @@ El código fuente de X-Road solo incluye los idiomas Inglés y Finlandés. Se ha
 ### Probar la plataforma
 Si desea probar la plataforma sin hacer modificaciones al código puede descargar los paquetes DEB compilados del proyecto TENOLI de El Salvador disponibles desde [esta dirección](http://tenoli.gobiernoelectronico.gob.sv/debs/).  
 
-La instalación de los paquetes DEB está documentada para:
-
-[Instalar en Ubuntu-Bionic](ubuntu-bionic/README.md)
+La instalación está documentada en la [sección instalar](instalar/README.md)
 
 La documentación  del proyecto TENOLI  de El Salvador sobre la publicación y gestión de servicios está disponible en [esta página](http://tenoli.gobiernoelectronico.gob.sv/) 
 
