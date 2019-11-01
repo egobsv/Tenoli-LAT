@@ -20,15 +20,15 @@ Vagrant.configure("2") do |config|
   ss1.vm.provision :shell, path: "servidorSeguridad.sh"
   end
 
-  config.vm.define "ss2" do |ss2|
-  ss2.vm.box = "centos/7"
-  ss2.vm.hostname="tenoli-ss2"
-  ss2.vm.provider "virtualbox" do |ss2|
-      ss2.customize ["modifyvm", :id, "--memory", "2048"]
-  end
-  ss2.vm.network "private_network", ip: "10.0.10.12"
-  ss2.vm.provision :shell, path: "servidorSeguridad-centos.sh"
-  end
+#  config.vm.define "ss2" do |ss2|
+#  ss2.vm.box = "generic/rhel7"
+#  ss2.vm.hostname="tenoli-ss2"
+#  ss2.vm.provider "virtualbox" do |ss2|
+#      ss2.customize ["modifyvm", :id, "--memory", "2048"]
+#  end
+#  ss2.vm.network "private_network", ip: "10.0.10.12"
+#  ss2.vm.provision :shell, path: "servidorSeguridad-centos.sh"
+#  end
 
   config.vm.define "ca" do |ca|
   ca.vm.box = "ubuntu/bionic64"
