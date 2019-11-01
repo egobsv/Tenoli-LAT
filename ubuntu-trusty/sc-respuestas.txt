@@ -1,6 +1,0 @@
-xroad-center	xroad-common/admin-altsubject	string	IP:10.0.0.10,DNS:sc.tenoli.gob.sv
-xroad-center	xroad-common/service-altsubject	string	IP:10.0.2.15,DNS:tenoli.local
-xroad-center	xroad-common/service-subject	string	/CN=centralserver/O=local
-xroad-center	xroad-common/admin-subject	string	/CN=servidorCentral/O=SETEPLAN/O=Gobierno de El Salvador/C=SV
-xroad-center	xroad-common/username	string	xroad
-xroad-common	xroad-common/username	string	xroad
