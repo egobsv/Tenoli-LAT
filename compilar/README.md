@@ -29,6 +29,7 @@ Los archivos de traducción al Español están incluidos en el comprimido ESfile
 cp ESfiles-6.22/center-ui/* xroad-code/src/center-ui/config/locales/;
 cp ESfiles-6.22/common-ui/* xroad-code/src/common-ui/config/locales/;
 cp ESfiles-6.22/proxy-ui/* xroad-code/src/proxy-ui/config/locales/;
+cp ESfiles-6.22/es.yml xroad-code/src/center-common/config/locales/es.yml
 cd xroad-code/src;
 ```
 Modifique la variable 'cert_profile_info_hint' dentro del archivo xroad-code/code/src/center-ui/config/locales/views_es.yml para mencionar la clase que usa su PKI, ejemplo:
