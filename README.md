@@ -10,7 +10,7 @@ Plataforma de interoperabilidad distribuida usando firma electrónica. Este repo
 * ASiCE - Contenedores firmados y sellados electrónicamente ETSI EN 319 162 
 
 ## Sobre la plataforma
-La plataforma crea una red segura de intercambio de datos entre instituciones de gobierno y tiene tres componentes principales:
+La plataforma X-Road (Versión 6.22) crea una red segura de intercambio de datos entre instituciones de gobierno y tiene tres componentes principales:
 
 1- Un servidor Central encargado registrar miembros en la red de intercambio y de mantener un catálogo de servicios disponibles.
 

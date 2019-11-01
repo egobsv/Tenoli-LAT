@@ -1,7 +1,7 @@
 
 ## Instalar Plataforma usando Ubuntu Bionic
 
-Los paquetes oficiales de X-Road solo pueden ser instalados en Ubuntu Trusty. Para usar bionic necesita [compilar la plataforma](https://github.com/egobsv/Tenoli-LAT/tree/master/compilar) y modificar sus dependencias. Opcionalmente puede  [descargar los paquetes DEB](http://tenoli.gobiernoelectronico.gob.sv/debs/) de TENOLI - El Salvador que ya incluyen estos cambios. 
+Los paquetes oficiales de X-Road solo pueden ser usados con certificados de Finlandia o estonia y pueden ser instalados en Ubuntu Bionic o Centos. Para usar la autoridad certificadora de su país es necesario [compilar la plataforma](https://github.com/egobsv/Tenoli-LAT/tree/master/compilar). Opcionalmente puede  [descargar los paquetes DEB](http://tenoli.gobiernoelectronico.gob.sv/debs/) de TENOLI - El Salvador para crear un ambiente de pruebas. 
 
 
 ### Instalación de Servidor
@@ -19,13 +19,6 @@ La configuración del servidor central esta descrita en la [documentación ofici
 chmod +x servidorSeguridad.sh
 ./servidorSeguridad.sh
 ```
-### Instalación de adaptador REST
-La plataforma esta diseñada para trabjar con mensajes SOAP/XML, el adaptador REST es un módulo adicional que permite usar mensajes JSON y su código fuente esta disponible en [este sitio](https://github.com/vrk-kpa/REST-adapter-service). Puede descargar el paquete de bionic desde [esta ruta](http://tenoli.gobiernoelectronico.gob.sv/debs/rest-adapter-service.deb). Para instalarlo, descarguelo dentro del Servidor de Seguridad y ejecute el siguiente comando:
-```
-dpkg -i rest-adapter-service.deb 
-```
-Los archivos de confirguración del módulo están disponibles en /etc/rest-adapter-service. Puede encontrar ejemplos detallados dentro de [la documentación](https://github.com/vrk-kpa/REST-adapter-service/blob/master/documentation/Rest-Adapter-Service-principles.md). La página del servicio esta disponible en http://[ip servidor]:8080/rest-service-adapter.
-
 
 ### Instalación usando Vagrant
 

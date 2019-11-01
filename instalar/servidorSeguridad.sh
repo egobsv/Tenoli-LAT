@@ -6,13 +6,16 @@ useradd -m xroad;
 echo 'xroad:xroad' | chpasswd;
 cp /vagrant/dependencias/* /var/cache/apt/archives/;
 mkdir /opt/tenoli;
+
+#Sus Paquetetes compilados
 cp /vagrant/debs6.22/deb/* /opt/tenoli/;
+
 apt-get update;
 apt-get install -y openjdk-8-jre-headless ca-certificates-java ntp unzip expect net-tools \
                    postgresql postgresql-contrib postgresql-client crudini rlwrap \
                    nginx-light curl debconf rlwrap rsyslog unzip libmhash2 authbind;
-cd /vagrant/scripts;
-debconf-set-selections ss-respuestas.txt;
+
+debconf-set-selections /vagrant/ss-respuestas.txt;
 cd /opt/tenoli;
 
 dpkg -i xroad-base_6.22.0-1.22.0.ubuntu18.04_amd64.deb xroad-jetty9_6.22.0-1.22.0.ubuntu18.04_all.deb \

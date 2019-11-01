@@ -6,16 +6,17 @@ timedatectl set-timezone America/El_Salvador;
 hostnamectl set-hostname sc.tenoli.gob.sv
 useradd -m xroad;
 echo 'xroad:xroad' | chpasswd;
-cp /vagrant/dependencias/* /var/cache/apt/archives/;
 mkdir /opt/tenoli;
-cp /vagrant/debs6.22/deb/* /opt/tenoli/;
-apt-get update;
 
+#Sus Paquetes Compilados
+cp /vagrant/debs6.22/deb/* /opt/tenoli/;
+
+apt-get update;
 apt-get install -y openjdk-8-jre-headless ca-certificates-java ntp unzip expect net-tools \
                    postgresql postgresql-contrib postgresql-client crudini rlwrap \
                    nginx-light curl debconf rlwrap rsyslog unzip libmhash2 authbind;
 
-cd /vagrant/scripts;
+cd /vagrant/;
 debconf-set-selections sc-respuestas.txt;
 cd /opt/tenoli;
 service ntp restart;
