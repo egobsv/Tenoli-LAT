@@ -1,5 +1,5 @@
 ## Modificar y Compilar X-Road
-Antes de iniciar asegúrese de descargar descargar el código fuente de X-Road dentro de la carpeta 'xroad-code'.  La versión 6.22 es la ultima disponible por le momento y puede [descargarla en este enlace](https://github.com/ria-ee/X-Road/releases)
+Antes de iniciar asegúrese de descargar descargar el código fuente de X-Road dentro de la carpeta 'xroad-code'.  La versión 6.22 es la ultima disponible por le momento y puede [descargarla en este enlace](https://github.com/nordic-institute/X-Road/releases/tag/6.22.0)
 
 ### Agregar PKI 
 La palataforma necesita conocer los campos que utilizan los certificados de su PKI, para esto es necesario crear cuatro classes en Java:
@@ -62,7 +62,7 @@ Y modificar la dependencia:
  por "postgresql, postgresql-contrib"
 
 ### Compilar la Plataforma
-Para compilar el código fuente debe seguir las instrucciones del proyecto X-Road [disponible en este enlace](https://github.com/ria-ee/X-Road/blob/44d69e017541fe25f7cdfcd541a5d74d66ff5566/src/BUILD.md)
+Para compilar el código fuente debe seguir las instrucciones del proyecto X-Road [disponible en este enlace](https://github.com/nordic-institute/X-Road/blob/6.22.0/src/BUILD.md)
 
 Una vez terminada la compilación los paquetes de instalación estarán disponibles en las siguientes rutas: 
 ```
