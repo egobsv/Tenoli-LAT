@@ -22,11 +22,11 @@ El archivo Vagrantfile de este repositorio instala automáticamente un servidor 
 
 **Nota**: La instalación inicial usa OpenSSL para simular los servicios de una PKI y hacer pruebas. Para usar la plataforma en producción se recomienda usar un proveedor comercial o una Autoridad Certificadora interna más robusta. Como ejemplo, [puede usar EJBCA](https://github.com/egobsv/certificadora) e importar los perfiles de certificados EJBCAcertprofiles-TENOLI.zip, EJBCAentityprofiles-TENOLI.zip. 
 
-Actualmente, la documentación de este repositorio solo comprende la instalación de la plataforma. La configuración de la plataforma está disponible en la sección Manuales de la [documentación de X-Road](https://github.com/ria-ee/X-Road/blob/develop/doc/README.md) 
+Actualmente, la documentación de este repositorio solo comprende la instalación de la plataforma. La configuración de la plataforma está disponible en la sección Manuales de la [documentación de X-Road](https://github.com/nordic-institute/X-Road/blob/6.22.0/doc/README.md) 
  
 ## Instalación 
 
-Actualmente el código de [X-Road publicado en Github](https://github.com/ria-ee/X-Road) es administrado por un equipo cerrado de desarrolladores de Estonia y Finlandia, no es posible contribuir al proyecto. Los paquetes oficiales, compilados por el equipo de X-Road, solo están disponibles en Inglés y utilizan la PKI de Finlandia. Sin embargo es posible descargar el código fuente y adecuarlo para cualquier país.
+Actualmente el código de [X-Road publicado en Github](https://github.com/nordic-institute/X-Road/tree/6.22.0) es administrado por un equipo cerrado de desarrolladores de Estonia y Finlandia, no es posible contribuir al proyecto. Los paquetes oficiales, compilados por el equipo de X-Road, solo están disponibles en Inglés y utilizan la PKI de Finlandia. Sin embargo es posible descargar el código fuente y adecuarlo para cualquier país.
 
 ### Modificación del país
   La plataforma necesita los servicio de una PKI,  las rutinas de verificación de certificados validan que dentro del sujeto exista el valor C=FI, es decir que el país  de origen sea Finlandia. Para modificar esto es necesario crear cuatro archivos, clases de Java, con las rutinas necesarias para trabajar con los certificados de su proveedor PKI. Para mayores detalles revise las [indicaciones de compilación](compilar/) de la plataforma
@@ -41,9 +41,7 @@ Si desea probar la plataforma sin hacer modificaciones al código puede descarga
 
 La instalación de los paquetes DEB está documentada para:
 
-[Instalar en Ubuntu-Trusty](ubuntu-trusty/README.md)
-
-[Instalar en Ubuntu-Xenial](ubuntu-xenial/README.md)
+[Instalar en Ubuntu-Bionic](ubuntu-xenial/README.md)
 
 La documentación  del proyecto TENOLI  de El Salvador sobre la publicación y gestión de servicios está disponible en [esta página](http://tenoli.gobiernoelectronico.gob.sv/) 
 
