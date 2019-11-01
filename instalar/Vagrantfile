@@ -27,7 +27,6 @@ Vagrant.configure("2") do |config|
 #      ss2.customize ["modifyvm", :id, "--memory", "2048"]
 #  end
 #  ss2.vm.network "private_network", ip: "10.0.10.12"
-#  ss2.vm.provision :shell, path: "servidorSeguridad-centos.sh"
 #  end
 
   config.vm.define "ca" do |ca|
