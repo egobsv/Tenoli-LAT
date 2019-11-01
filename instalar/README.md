@@ -21,7 +21,24 @@ chmod +x servidorSeguridad.sh
 ```
 
 ### Instalacion usando Paquetes RPM
-La plataforma puede ser instalada en Red Hat Enterprise Linux 7 (RHEL7) o superior. Las [instrucciones de instalación estan dipsonibles en la documentación oficial](https://github.com/nordic-institute/X-Road/blob/6.22.0/doc/Manuals/ig-ss_x-road_v6_security_server_installation_guide_for_rhel7.md).
+La plataforma puede ser instalada en Red Hat Enterprise Linux 7 (RHEL7) o superior.
+Cree la carpeta /opt/rpms y copie sus paquetes dentro de esta carpeta, luego cree el archivo /etc/yum.repos.d/tenoli.local con este contenido:
+```
+[centos7]
+name=tenoli
+baseurl=file:///opt/rpms/
+enabled=1
+gpgcheck=0
+```
+Active su nuevo respotiorio con estos comandos:
+```
+~# yum clean all
+~# yum repolist all
+```
+
+Las [instrucciones de instalación estan dipsonibles en la documentación oficial](https://github.com/nordic-institute/X-Road/blob/6.22.0/doc/Manuals/ig-ss_x-road_v6_security_server_installation_guide_for_rhel7.md). Asegurese de usar su repositorio local durante la instalación;
+
+
 
 ### Instalación usando Vagrant
 
