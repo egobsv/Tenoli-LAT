@@ -52,14 +52,6 @@ xroad-code/src/center-service/config/application.rb
 xroad-code/src/center-ui/config/application.rb
 xroad-code/src/proxy-ui/config/application.rb
 ```
-### Ubuntu Xenial
-Si desea instalar la plaforma en Unbuntu Xenial debe modificar el archivo 
-```
-xroad-code/src/packages/xroad/debian/control
-```
-Y modificar la dependencia: 
- "postgresql|postgresql-9.4, postgresql-contrib|postgresql-contrib-9.4" 
- por "postgresql, postgresql-contrib"
 
 ### Compilar la Plataforma
 Para compilar el código fuente debe seguir las instrucciones del proyecto X-Road [disponible en este enlace](https://github.com/nordic-institute/X-Road/blob/6.22.0/src/BUILD.md)
