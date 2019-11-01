@@ -41,7 +41,7 @@ Si desea probar la plataforma sin hacer modificaciones al código puede descarga
 
 La instalación de los paquetes DEB está documentada para:
 
-[Instalar en Ubuntu-Bionic](ubuntu-xenial/README.md)
+[Instalar en Ubuntu-Bionic](ubuntu-bionic/README.md)
 
 La documentación  del proyecto TENOLI  de El Salvador sobre la publicación y gestión de servicios está disponible en [esta página](http://tenoli.gobiernoelectronico.gob.sv/) 
 

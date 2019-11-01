@@ -16,6 +16,7 @@ crl_dir           = $dir/crl
 new_certs_dir     = $dir/newcerts
 database          = $dir/index.txt
 serial            = $dir/serial
+unique_subject    = no
 
 # The root key and root certificate.
 private_key       = $dir/private/ca.key.pem
@@ -67,16 +68,17 @@ policy            = policy_loose
 [ policy_strict ]
 # The root CA should only sign intermediate certificates that match.
 # See the POLICY FORMAT section of `man ca`.
-countryName             = match
-#stateOrProvinceName     = match
-organizationName        = match
+countryName             = optional
+stateOrProvinceName     = optional
+localityName            = optional
+organizationName        = optional
 organizationalUnitName  = optional
 commonName              = supplied
 
 [ policy_loose ]
 # Allow the intermediate CA to sign a more diverse range of certificates.
 # See the POLICY FORMAT section of the `ca` man page.
-countryName             = supplied
+countryName             = optional
 stateOrProvinceName     = optional
 localityName            = optional
 organizationName        = optional
@@ -88,9 +90,10 @@ serialNumber            = optional
 
 [ req ]
 # Options for the `req` tool (`man req`).
-default_bits        = 2048
+default_bits        = 3072
 distinguished_name  = req_distinguished_name
 string_mask         = utf8only
+utf8                = yes
 
 # SHA-1 is deprecated, so use SHA-2 instead.
 default_md          = sha256
@@ -100,19 +103,19 @@ x509_extensions     = v3_ca
 
 [ req_distinguished_name ]
 # See <https://en.wikipedia.org/wiki/Certificate_signing_request>.
-countryName                     = Country Name (2 letter code)
+#countryName                     = Country Name (2 letter code)
 #stateOrProvinceName             = State or Province Name
 #localityName                    = Locality Name
 0.organizationName              = Organization Name
-organizationalUnitName          = Organizational Unit Name
+#organizationalUnitName          = Organizational Unit Name
 commonName                      = Common Name
 #emailAddress                    = Email Address
 
 # Optionally, specify some defaults.
-countryName_default             = FI
+#countryName_default             =
 #stateOrProvinceName_default     = 
 #localityName_default            =
-0.organizationName_default      = Xroad Test
+0.organizationName_default      = X-Road Test
 organizationalUnitName_default  =
 #emailAddress_default            =
 
@@ -179,7 +182,7 @@ extendedKeyUsage = clientAuth, serverAuth
 default_tsa = tsa_config1 # the default TSA section
 
 [ tsa_config1 ]
-dir               = /home/hyoty/projects/proto/TSA/CA/TSA
+dir               = $HOME/TSA
 serial            = $dir/serial
 
 # These are used by the TSA reply generation only. 
@@ -194,4 +197,3 @@ clock_precision_digits = 0 # number of digits after dot. (optional)
 ordering        = no # Is ordering defined for timestamps? # (optional, default: no) 
 tsa_name        = yes # Must the TSA name be included in the reply? # (optional, default: no) 
 ess_cert_id_chain = no # Must the ESS cert id chain be included? # (optional, default: no) 
-

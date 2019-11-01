@@ -1,12 +1,13 @@
 [Unit]
-Description=Servicio Sellado de Tiempo
+Description=Test TSA
 After=network.target
 
 [Service]
-WorkingDirectory=/home/ca/TSA
+PermissionsStartOnly=true
 User=ocsp
 Group=ca
-ExecStart=/usr/bin/python3 tsa_server.py
+WorkingDirectory=/home/ca/TSA
+ExecStart=/usr/bin/python3 /home/ca/TSA/tsa_server.py
 Restart=on-failure
 SuccessExitStatus=143
 

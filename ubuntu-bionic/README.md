@@ -1,15 +1,11 @@
 
-## Instalar Plataforma usando Ubuntu Xenial
+## Instalar Plataforma usando Ubuntu Bionic
 
-Los paquetes oficiales de X-Road solo pueden ser instalados en Ubuntu Trusty. Para usar Xenial necesita [compilar la plataforma](https://github.com/egobsv/Tenoli-LAT/tree/master/compilar) y modificar sus dependencias. Opcionalmente puede  [descargar los paquetes DEB](http://tenoli.gobiernoelectronico.gob.sv/debs/) de TENOLI - El Salvador que ya incluyen estos cambios. 
+Los paquetes oficiales de X-Road solo pueden ser instalados en Ubuntu Trusty. Para usar bionic necesita [compilar la plataforma](https://github.com/egobsv/Tenoli-LAT/tree/master/compilar) y modificar sus dependencias. Opcionalmente puede  [descargar los paquetes DEB](http://tenoli.gobiernoelectronico.gob.sv/debs/) de TENOLI - El Salvador que ya incluyen estos cambios. 
 
-### Cuál es la diferencia entre Trusty y Xenial?
-
-Los paquetes de Xroad se ejecutan como servicios dentro del servidor. Estos servicios están configurados usando Upstart en Trusty. Xenial usa SystemD en lugar de Upstart. Por ahora es necesario configurar los servicios manualmente (los cambios podrían compilarse dentro de los paquetes, si alguien tiene tiempo de hacerlo sera bienvenido!). 
- 
 
 ### Instalación de Servidor
-En una nueva instalación de Ubuntu Xenial, descargue la carpeta ubuntu-xenial de este repositorio y cópiela en la carpeta /opt. Cree la carpeta /opt/scripts/debs y copie sus paquetes DEB dentro de esta carpeta. Dentro de la carpeta scripts, edite los archivos de respuestas (sc-respuestas.txt y ss-respuestas.txt) que contienen los valores que se usan en la instalación.  Luego, con privilegios de Administrador/Root, ejecute los siguientes comandos:
+En una nueva instalación de Ubuntu bionic, descargue la carpeta ubuntu-bionic de este repositorio y cópiela en la carpeta /opt. Cree la carpeta /opt/scripts/debs y copie sus paquetes DEB dentro de esta carpeta. Dentro de la carpeta scripts, edite los archivos de respuestas (sc-respuestas.txt y ss-respuestas.txt) que contienen los valores que se usan en la instalación.  Luego, con privilegios de Administrador/Root, ejecute los siguientes comandos:
 
 - Para instalar el servidor central
 ```
@@ -24,7 +20,7 @@ chmod +x servidorSeguridad.sh
 ./servidorSeguridad.sh
 ```
 ### Instalación de adaptador REST
-La plataforma esta diseñada para trabjar con mensajes SOAP/XML, el adaptador REST es un módulo adicional que permite usar mensajes JSON y su código fuente esta disponible en [este sitio](https://github.com/vrk-kpa/REST-adapter-service). Puede descargar el paquete de Xenial desde [esta ruta](http://tenoli.gobiernoelectronico.gob.sv/debs/rest-adapter-service.deb). Para instalarlo, descarguelo dentro del Servidor de Seguridad y ejecute el siguiente comando:
+La plataforma esta diseñada para trabjar con mensajes SOAP/XML, el adaptador REST es un módulo adicional que permite usar mensajes JSON y su código fuente esta disponible en [este sitio](https://github.com/vrk-kpa/REST-adapter-service). Puede descargar el paquete de bionic desde [esta ruta](http://tenoli.gobiernoelectronico.gob.sv/debs/rest-adapter-service.deb). Para instalarlo, descarguelo dentro del Servidor de Seguridad y ejecute el siguiente comando:
 ```
 dpkg -i rest-adapter-service.deb 
 ```
@@ -33,7 +29,7 @@ Los archivos de confirguración del módulo están disponibles en /etc/rest-adap
 
 ### Instalación usando Vagrant
 
-El archivo Vagrantfile de esta carpeta instala los paquetes DEB de la plataforma en un ambiente de prueba con todos sus componentes usando Vagrant y Ubuntu Xenial. El script de Vagrant instala automáticamente un servidor central, una autoridad certificadora y dos servidores de seguridad usando maquinas virtuales.
+El archivo Vagrantfile de esta carpeta instala los paquetes DEB de la plataforma en un ambiente de prueba con todos sus componentes usando Vagrant y Ubuntu bionic. El script de Vagrant instala automáticamente un servidor central, una autoridad certificadora y dos servidores de seguridad usando maquinas virtuales.
 
 ### Licencia
 

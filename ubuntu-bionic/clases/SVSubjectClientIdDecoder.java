@@ -1,6 +1,8 @@
 /**
  * The MIT License
- * Copyright (c) 2015 Estonian Information System Authority (RIA), Population Register Centre (VRK)
+ * Copyright (c) 2018 Estonian Information System Authority (RIA),
+ * Nordic Institute for Interoperability Solutions (NIIS), Population Register Centre (VRK)
+ * Copyright (c) 2015-2017 Estonian Information System Authority (RIA), Population Register Centre (VRK)
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -22,23 +24,24 @@
  */
 package ee.ria.xroad.common.util;
 
-import static ee.ria.xroad.common.util.CertUtils.getRDNValue;
-
-import java.security.cert.X509Certificate;
-import java.util.regex.Pattern;
-
-import javax.security.auth.x500.X500Principal;
-
-import org.bouncycastle.asn1.x500.X500Name;
-import org.bouncycastle.asn1.x500.style.BCStyle;
-
 import ee.ria.xroad.common.CodedException;
 import ee.ria.xroad.common.ErrorCodes;
 import ee.ria.xroad.common.identifier.ClientId;
 
+import org.bouncycastle.asn1.x500.X500Name;
+import org.bouncycastle.asn1.x500.style.BCStyle;
+
+import javax.security.auth.x500.X500Principal;
+
+import java.security.cert.X509Certificate;
+import java.util.regex.Pattern;
+
+import static ee.ria.xroad.common.util.CertUtils.getRDNValue;
+
 /**
- * Helper class for decoding ClientId from Tenoli - El Salvador (X-Road).
+ * Helper class for decoding ClientId from El Salvador X-Road (Tenoli) instance signing certificates.
  */
+
 public final class SVSubjectClientIdDecoder {
 
     public static final int NUM_COMPONENTS = 3;
@@ -112,43 +115,5 @@ public final class SVSubjectClientIdDecoder {
                 components[2], // memberClass
                 memberCode);
 
-    }
-
-
-    /*
-     * The legacy encoding for clientID:
-     * <ul>
-     *  <li>C = SV (country code must be 'SV' when using this decoder)</li>
-     *  <li>O = instanceId</li>
-     *  <li>OU = memberClass</li>
-     *  <li>CN = memberCode (business code without "Y" prefix)</li>
-     * </ul>
-     */
-    private static ClientId parseClientIdFromLegacyName(X500Name x500name) {
-        String c = getRDNValue(x500name, BCStyle.C);
-        if (!"SV".equals(c)) {
-            throw new CodedException(ErrorCodes.X_INCORRECT_CERTIFICATE,
-                           "El certificado no tiene un código de país válido");
-        }
-
-        String instanceId = getRDNValue(x500name, BCStyle.O);
-        if (instanceId == null) {
-            throw new CodedException(ErrorCodes.X_INCORRECT_CERTIFICATE,
-			 "El certificado no tiene un nombre de Organización (O)");
-        }
-
-        String memberClass = getRDNValue(x500name, BCStyle.OU);
-        if (memberClass == null) {
-            throw new CodedException(ErrorCodes.X_INCORRECT_CERTIFICATE,
-			"El certificado no tiene un nombre de Unidad Organizacional");
-        }
-
-        String memberCode = getRDNValue(x500name, BCStyle.CN);
-        if (memberCode == null) {
-            throw new CodedException(ErrorCodes.X_INCORRECT_CERTIFICATE,
-			 "El certificado no tiene un Nombre Común (CN)");
-        }
-
-        return ClientId.create(instanceId, memberClass, memberCode);
     }
 }
