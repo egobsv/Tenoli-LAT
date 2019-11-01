@@ -1,11 +1,11 @@
 
-## Instalar Plataforma usando Ubuntu Bionic
+## Instalar Plataforma
 
-Los paquetes oficiales de X-Road solo pueden ser usados con certificados de Finlandia o estonia y pueden ser instalados en Ubuntu Bionic o Centos. Para usar la autoridad certificadora de su país es necesario [compilar la plataforma](https://github.com/egobsv/Tenoli-LAT/tree/master/compilar). Opcionalmente puede  [descargar los paquetes DEB](http://tenoli.gobiernoelectronico.gob.sv/debs/) de TENOLI - El Salvador para crear un ambiente de pruebas. 
+Los paquetes oficiales de X-Road solo pueden ser usados con certificados de Finlandia o estonia y pueden ser instalados en Ubuntu Bionic o RHEL7. Para usar la autoridad certificadora de su país es necesario [compilar la plataforma](https://github.com/egobsv/Tenoli-LAT/tree/master/compilar). Opcionalmente puede  [descargar los paquetes DEB](http://tenoli.gobiernoelectronico.gob.sv/debs/) de TENOLI - El Salvador para crear un ambiente de pruebas. 
 
 
-### Instalación de Servidor
-En una nueva instalación de Ubuntu bionic, descargue la carpeta ubuntu-bionic de este repositorio y cópiela en la carpeta /opt. Cree la carpeta /opt/scripts/debs y copie sus paquetes DEB dentro de esta carpeta. Dentro de la carpeta scripts, edite los archivos de respuestas (sc-respuestas.txt y ss-respuestas.txt) que contienen los valores que se usan en la instalación.  Luego, con privilegios de Administrador/Root, ejecute los siguientes comandos:
+### Instalación usando Paquetes DEB
+En una nueva instalación de Ubuntu bionic o Debian Buster, descargue la carpeta 'instalar' de este repositorio y cópiela en la carpeta /opt. Cree la carpeta /opt/debs y copie sus paquetes DEB dentro de esta carpeta. Dentro de la carpeta scripts, edite los archivos de respuestas (sc-respuestas.txt y ss-respuestas.txt) que contienen los valores que se usan en la instalación.  Luego, con privilegios de Administrador/Root, ejecute los siguientes comandos:
 
 - Para instalar el servidor central
 ```
@@ -20,9 +20,13 @@ chmod +x servidorSeguridad.sh
 ./servidorSeguridad.sh
 ```
 
+### Instalacion usando Paquetes RPM
+La plataforma puede ser instalada en Red Hat Enterprise Linux 7 (RHEL7) o superior. Las [instrucciones de instalación estan dipsonibles en la documentación oficial](https://github.com/nordic-institute/X-Road/blob/6.22.0/doc/Manuals/ig-ss_x-road_v6_security_server_installation_guide_for_rhel7.md).
+
 ### Instalación usando Vagrant
 
 El archivo Vagrantfile de esta carpeta instala los paquetes DEB de la plataforma en un ambiente de prueba con todos sus componentes usando Vagrant y Ubuntu bionic. El script de Vagrant instala automáticamente un servidor central, una autoridad certificadora y dos servidores de seguridad usando maquinas virtuales.
+
 
 ### Licencia
 
