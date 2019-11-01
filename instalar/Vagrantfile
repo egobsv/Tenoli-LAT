@@ -14,7 +14,7 @@ Vagrant.configure("2") do |config|
   ss1.vm.box =  "ubuntu/bionic64"
   ss1.vm.hostname="tenoli-ss1"
   ss1.vm.provider "virtualbox" do |ss1|
-      s1.customize ["modifyvm", :id, "--memory", "2048"] 
+      ss1.customize ["modifyvm", :id, "--memory", "2048"] 
   end
   ss1.vm.network "private_network", ip: "10.0.10.11"
   ss1.vm.provision :shell, path: "servidorSeguridad.sh"
