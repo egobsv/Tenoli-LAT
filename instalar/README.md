@@ -1,7 +1,7 @@
 
 ## Instalar Plataforma
 
-Los paquetes oficiales de X-Road solo pueden ser usados con certificados de Finlandia o estonia y pueden ser instalados en Ubuntu Bionic o RHEL7. Para usar la autoridad certificadora de su país es necesario [compilar la plataforma](https://github.com/egobsv/Tenoli-LAT/tree/master/compilar). Opcionalmente puede  [descargar los paquetes DEB](http://tenoli.gobiernoelectronico.gob.sv/debs/) de TENOLI - El Salvador para crear un ambiente de pruebas. 
+Los paquetes oficiales de X-Road solo pueden ser usados con certificados de Finlandia o estonia y pueden ser instalados usando paquetes DEB o RPM. Para usar la autoridad certificadora de su país es necesario [compilar la plataforma](https://github.com/egobsv/Tenoli-LAT/tree/master/compilar). Opcionalmente puede  [descargar los paquetes DEB](http://tenoli.gobiernoelectronico.gob.sv/debs/) de TENOLI - El Salvador para crear un ambiente de pruebas. 
 
 
 ### Instalación usando Paquetes DEB
