@@ -7,7 +7,7 @@ PermissionsStartOnly=true
 User=ocsp
 Group=ca
 WorkingDirectory=/home/ca/TSA
-ExecStart=/usr/bin/python3 /home/ca/TSA/tsa_server.py
+ExecStart=/usr/bin/python /home/ca/TSA/tsa_server.py
 Restart=on-failure
 SuccessExitStatus=143
 

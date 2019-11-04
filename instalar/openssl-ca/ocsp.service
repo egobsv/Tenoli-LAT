@@ -7,7 +7,7 @@ PermissionsStartOnly=true
 User=ocsp
 Group=ca
 WorkingDirectory=/home/ca/CA
-ExecStart=/usr/bin/python3 /home/ca/CA/ocsp.py
+ExecStart=/usr/bin/python /home/ca/CA/ocsp.py
 Restart=on-failure
 SuccessExitStatus=143
 
