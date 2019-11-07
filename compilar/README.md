@@ -40,7 +40,7 @@ Luego de copiar los archivos debe cambiar el idioma por defecto; para esto reemp
 ```
 config.i18n.default_locale = :en
 ```
-Con estas dos líneas:
+Con estas la línea:
 ```
   config.i18n.default_locale = :es
 ```
