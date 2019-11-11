@@ -26,10 +26,10 @@ Actualmente, la documentación de este repositorio solo comprende la instalació
  
 ## Instalación 
 
-Actualmente el código de [X-Road publicado en Github](https://github.com/nordic-institute/X-Road/tree/6.22.0) es administrado por un equipo de desarrolladores de Estonia y Finlandia. Los paquetes oficiales, compilados por el equipo de X-Road, solo están disponibles en Inglés y utilizan la PKI de Finlandia. Sin embargo es posible descargar el código fuente y [adecuarlo para usar la PKI de otro país](https://confluence.niis.org/pages/viewpage.action?pageId=4293076).
+Actualmente el código de [X-Road publicado en Github](https://github.com/nordic-institute/X-Road/tree/6.22.0) es administrado por un equipo de desarrolladores de Estonia y Finlandia. Los paquetes oficiales, compilados por el equipo de X-Road, solo están disponibles en Inglés y utilizan la PKI de Finlandia. Sin embargo es posible descargar el código fuente y adecuarlo para usar la PKI de otro país.
 
 ### Modificación del país
-  La plataforma necesita los servicio de una PKI,  las rutinas de verificación de certificados validan que dentro del sujeto exista el valor C=FI, es decir que el país  de origen sea Finlandia. Para modificar esto es necesario crear cuatro archivos, clases de Java, con las rutinas necesarias para trabajar con los certificados de su proveedor PKI. Para mayores detalles revise las [indicaciones de compilación](compilar/) de la plataforma
+  La plataforma necesita los servicio de una PKI,  las rutinas de verificación de certificados validan que dentro del sujeto exista el valor C=FI, es decir que el país  de origen sea Finlandia. Para usar la PKI de otro país es necesario definir y agregar la estrucutra de los certificados nacionales de su país a la plataforma [según lo explica esta página](https://confluence.niis.org/pages/viewpage.action?pageId=4293076).  En este repositorio econtrará la estrucutra de los crear cuatro archivos, clases de Java, con las rutinas necesarias para trabajar con los certificados del proveedor PKI de sus país. Para mayores detalles revise las [indicaciones de compilación](compilar/) de la plataforma
 
 ### Modificación del idioma
 
