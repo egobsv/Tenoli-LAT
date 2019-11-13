@@ -21,15 +21,15 @@ debconf-set-selections sc-respuestas.txt;
 cd /opt/tenoli;
 service ntp restart;
 
-dpkg -i xroad-base_6.22.0-1.22.0.ubuntu18.04_amd64.deb xroad-jetty9_6.22.0-1.22.0.ubuntu18.04_all.deb \
+dpkg -i xroad-base_6.22.0-1.22.0.ubuntu18.04_amd64.deb xroad-jetty9_6.22.0-1.local.ubuntu18.04_amd64.deb \
 xroad-signer_6.22.0-1.22.0.ubuntu18.04_amd64.deb xroad-nginx_6.22.0-1.22.0.ubuntu18.04_amd64.deb \
 xroad-confclient_6.22.0-1.22.0.ubuntu18.04_amd64.deb;
 
 #service postgresql restart;
-dpkg -i xroad-center_6.22.0-1.22.0.ubuntu18.04_all.deb;
-dpkg -i xroad-centralserver_6.22.0-1.22.0.ubuntu18.04_all.deb \
-        xroad-centralserver-monitoring_6.22.0-1.22.0.ubuntu18.04_all.deb \
-        xroad-autologin_6.22.0-1.22.0.ubuntu18.04_all.deb;
+dpkg -i xroad-center_6.22.0-1.local.ubuntu18.04_amd64.deb;
+dpkg -i xroad-centralserver_6.22.0-1.local.ubuntu18.04_amd64.deb \
+        xroad-centralserver-monitoring_6.22.0-1.local.ubuntu18.04_amd64.deb \
+        xroad-autologin_6.22.0-1.local.ubuntu18.04_amd64.deb;
 
 ##NUMERO PIN
 touch /etc/xroad/autologin;
