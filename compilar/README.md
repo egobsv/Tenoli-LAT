@@ -1,5 +1,5 @@
 ## Modificar y Compilar X-Road
-Antes de iniciar asegúrese de descargar descargar el código fuente de X-Road dentro de la carpeta 'xroad-code'.  La versión 6.22 es la ultima disponible por le momento y puede [descargarla en este enlace](https://github.com/nordic-institute/X-Road/releases/tag/6.22.0)
+Antes de iniciar asegúrese de descargar descargar el código fuente de X-Road dentro de la carpeta 'xroad-code'.  La versión 6.22 es la disponible al momento de escribir este documentación y puede [descargarla en este enlace](https://github.com/nordic-institute/X-Road/releases/tag/6.22.0)
 
 ### Agregar PKI 
 La palataforma necesita conocer los campos que utilizan los certificados de su PKI, para esto es necesario crear cuatro classes en Java:
