@@ -67,6 +67,22 @@ public final class SVSubjectClientIdDecoder {
         return parseClientId(x500name);
     }
 
+      /*
+     * The legacy encoding for clientID:
+     * <ul>
+     *  <li>C = SV (country code must be 'SV' when using this decoder)</li>
+     *  <li>O = instanceId</li>
+     *  <li>OU = memberClass</li>
+     *  <li>CN = memberCode (business code without "Y" prefix)</li>
+     * </ul>
+     */
+    private static ClientId parseClientIdFromLegacyName(X500Name x500name) {
+        String c = getRDNValue(x500name, BCStyle.C);
+        if (!"SV".equals(c)) {
+            throw new CodedException(ErrorCodes.X_INCORRECT_CERTIFICATE,
+                    "Certificate subject name does not contain valid country code");
+        }
+    
     /*
      * The encoding for clientID:
      * <ul>
